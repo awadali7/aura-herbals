@@ -6,7 +6,9 @@ import PerformanceOptimizer from "../components/PerformanceOptimizer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://auraherbals.in"),
+    metadataBase: new URL(
+        process.env.NEXT_PUBLIC_SITE_URL || "https://auraherbals.in"
+    ),
     title: {
         default: "Aura Herbals - Natural Rosemary Water for Hair & Scalp",
         template: "%s | Aura Herbals",
